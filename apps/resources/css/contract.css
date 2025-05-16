@@ -1,0 +1,35 @@
+@page {
+    margin: 265px 85px 170px 85px;
+}
+header {
+    position: fixed;
+    top: -210px;
+    width:100%;
+}
+.number_contract{
+    position: fixed;
+    top: -84px;
+    left: 448px;
+    font-family: 'Courier New', monospace;letter-spacing: 0px;font-size:13px;
+}
+.number_client{
+    position: absolute;
+    top: -30px;
+    left: 448px;
+    font-family: 'Courier New', monospace;letter-spacing: 0px;font-size:13px;
+}
+footer {
+    width:100%;
+    position: fixed;
+    bottom: -120px;
+    font-size:13px;
+}
+footer .page-number {
+text-align: center;
+}
+.page-number:before {
+    content: "Page " counter(page);
+}
+main {
+    font-family: 'Courier New', monospace;letter-spacing: 0px;font-size:13px;line-height:25px;
+}

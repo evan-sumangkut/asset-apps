@@ -1,0 +1,38 @@
+<?php
+
+namespace Database\Seeders;
+
+use Illuminate\Database\Seeder;
+
+use App\Models\User;
+use DB;
+
+
+class DatabaseSeeder extends Seeder
+{
+    /**
+     * Seed the application's database.
+     *
+     * @return void
+     */
+    public function run()
+    {
+        DB::statement('SET FOREIGN_KEY_CHECKS=0;');
+        DB::table('users')->truncate();
+        User::create([
+            'name' => 'superadmin',
+            'email' => 'superadmin@gmail.com',
+            'password' => bcrypt('12345'),
+            'username' => 'superadmin',
+            'level'=>1
+        ]);
+        User::create([
+            'name' => 'admin',
+            'email' => 'admin@gmail.com',
+            'password' => bcrypt('12345'),
+            'username' => 'admin',
+            'level'=>2
+        ]);
+        DB::statement('SET FOREIGN_KEY_CHECKS=1;');
+    }
+}

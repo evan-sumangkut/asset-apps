@@ -1,0 +1,16 @@
+.font-style-1 {
+	font-size:14px;
+}
+.font-style-size-md {
+	font-size:22px;
+}
+.icon-size-nav{
+	font-size:60px;
+}
+.custom-link a{
+    color:#525f7f;
+}
+
+body{
+    font-family: serif;
+}
