@@ -22,7 +22,6 @@ class CreateUsersTable extends Migration
             $table->string('password');
             $table->rememberToken();
             $table->string('photo_profile', 2048)->nullable();
-            $table->integer('level')->default(2)->comment('1:superadmin,2:admin');
             $table->softDeletes();
             $table->timestamps();
         });
